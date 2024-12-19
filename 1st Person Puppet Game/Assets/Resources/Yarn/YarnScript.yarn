@@ -1,0 +1,172 @@
+﻿title: Start
+tags:
+---
+Georgie woke up as he always did.
+Suddenly.
+In the center of the room.
+He'd been sleepwalking again.
+His doctor told him he had to stop doing that,
+but his doctor was a goose,
+and geese never tell the truth,
+so Georgie just ignored him.
+As he got his bearings, he remembered-
+the mail.
+Today was mail day,
+and he was expecting a very important letter.
+"I will go check the mailbox!" he said,
+and went to do that very thing.
+===
+title: Mailbox1
+---
+Georgie checked the mailbox anxiously.
+<<playDing LetterTextManager>>
+Mailbox: Hello, Georgie!
+said the mailbox.
+Mailbox: I've got something for you today.
+Georgie got very excited.
+But the letter inside the mailbox was not from
+the director of the vaudeville theater
+for which Georgie had auditioned the previous week,
+but from his Enemy.
+Geraldine the Gorilla.
+Mailbox: Aren't you going to open it?
+said the mailbox.
+Georgie tore it open angrily.
+<<revealEnemyLetter LetterTextManager>>
+//show letter sprite
+<<wait  10>>
+<<hideEnemyLetter LetterTextManager>>
+<<jump EnemyLetter1>>
+===
+title: EnemyLetter1
+---
+"What drivel!" thought Georgie.
+"I must respond at once."
+So he ran back inside to his office, at the back of his house.
+Georgie had never liked his house much,
+and so had barely furnished it.
+But he liked his study.
+===
+title: Study1
+---
+In his study, Georgie first went to the cabinet,
+where he kept all his spare sheets of paper.
+He took a sheet from the pile,
+and went to his desk,
+where his inkwell sat 
+next to his planchette,
+which he had stolen from Geraldine's house 
+at a seance she had conducted for a previous birthday.
+He ignored it for now,
+and busied himself with writing.
+<<revealMyLetter LetterTextManager>>
+<<myLetter1 LetterTextManager>>
+//Georgie letter
+<<wait  10>>
+<<hideMyLetter LetterTextManager>>
+Satisfied, Georgie went back to the mailbox.
+<<changeNode MailboxManager1>>
+//yarncommand to change the nodetocall for the mailbox to Send1
+===
+title: Send1
+---
+Mailbox: Another one already, Georgie?
+asked the mailbox.
+Mailbox: My my, quite busy!
+Georgie mailed the letter without making trivial small talk.
+He waited and waited.
+The sun rose and set.
+The stars came out and taunted him.
+Geraldine loved to say how she knew the stars better than him.
+Geraldine was up for the same role.
+Georgie wanted to believe he was better than her,
+that he was more right than she was for it,
+but in his little heart,
+he doubted.
+And then the letter came.
+<<playDing LetterTextManager>>
+Mailbox: Oh, my,
+said the mailbox,
+Mailbox: she's using perfumed ink!
+Mailbox: I'm allergic.
+<<GeraldineLetter2 LetterTextManager>>
+<<revealEnemyLetter LetterTextManager>>
+//Geraldine letter
+<<wait  10>>
+<<hideEnemyLetter LetterTextManager>>
+<<jump Reply>>
+===
+title: Reply
+---
+Georgie read the letter,
+and became incensed with rage.
+He tore the letter into pieces,
+//rip sound
+and ran back inside to pen a response.
+<<changeNode StudyManager>>
+//yarncommand to change StudyYarnCollider's node to call to Study2
+===
+title: Study2
+---
+Georgie grabbed another sheet of paper
+and ran to the desk and wrote a response.
+It was not his most dignified response.
+<<myLetter2 LetterTextManager>>
+<<revealMyLetter LetterTextManager>>
+//Georgie letter
+<<wait  10>>
+<<hideMyLetter LetterTextManager>>
+He ran back out to mail it.
+<<changeNode MailboxManager2>>
+//change mailbox nodetocall again
+===
+title: Send2
+---
+After sending it, Georgie waited a long time.
+He waited and waited,
+getting angrier and angrier.
+And angrier,
+and angrier,
+and angrier.
+And then-
+<<playDing LetterTextManager>>
+Mailbox: Something's here for you, Georgie!
+But it wasn't from his Enemy.
+It was from the vaudeville director.
+<<directorLetter LetterTextManager>>
+<<revealMyLetter LetterTextManager>>
+//director letter
+<<wait  10>>
+<<hideMyLetter LetterTextManager>>
+<<jump Tantrum>>
+===
+title: Tantrum
+---
+Having not gotten the role,
+and having waited and waited,
+and being the puppet that he was,
+there was only one thing left for Georgie to do.
+Throw a tantrum.
+And destroy everything.
+<<wait  2>>
+<<rigidbodiesOn RigidbodyController>>
+He ran about his house, knocking things over,
+until he even knocked over his house.
+And then, as he stood in the wreckage,
+his friend Susie appeared.
+<<playTimeline LetterTextManager>>
+<<wait  2>>
+<<jump SusieConclusion>>
+//jump susie, timeline go
+===
+title: SusieConclusion
+---
+Susie: Oh, Georgie.
+Susie: You have to stop doing this at every inconvenience.
+Susie: Are you satisfied, now?
+Susie: Are you?
+And what do you think, children?
+Was he?
+The end.
+===
+
